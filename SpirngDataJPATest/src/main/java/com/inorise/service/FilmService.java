@@ -6,7 +6,5 @@ public interface FilmService {
 	void test1();
 	
 	void addFilm();
-
-	void delete();
 	
 }

@@ -6,6 +6,6 @@ import org.springframework.data.repository.Repository;
 
 import com.inorise.domain.Film;
 
-public interface FilmRepository extends JpaRepository<Film, Long> {
+public interface FilmRepository extends JpaRepository<Film, Short> {
                                          
 }

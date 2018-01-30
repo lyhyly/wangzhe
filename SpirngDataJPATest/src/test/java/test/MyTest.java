@@ -1,7 +1,5 @@
 package test;
 
-import java.util.Date;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +20,7 @@ public class MyTest {
 
 	@Test
 	public void test1() {
-		System.out.println("开始写入，现在时间是："+new Date().toString());
 		filmService.addFilm();
-		System.out.println("写入完成，现在时间是："+new Date().toString());
-//		filmService.delete();
 	}
 	
 }
