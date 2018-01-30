@@ -22,7 +22,7 @@ public class Film {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "film_id")
-	private Short filmId;
+	private Long filmId;
 
 	@Column(name = "title")
 	private String title;
@@ -30,7 +30,7 @@ public class Film {
 	private String description;
 
 	@Column(name = "release_year")
-	private Date releaseYear;
+	private String releaseYear;
 	
 	@Column(name = "language_id")
 	private Byte languageId;
@@ -59,11 +59,11 @@ public class Film {
 	@Column(name = "last_update")
 	private Date lastUpdate;
 
-	public Short getFilmId() {
+	public Long getFilmId() {
 		return filmId;
 	}
 
-	public void setFilmId(Short filmId) {
+	public void setFilmId(Long filmId) {
 		this.filmId = filmId;
 	}
 
@@ -75,11 +75,11 @@ public class Film {
 		this.title = title == null ? null : title.trim();
 	}
 
-	public Date getReleaseYear() {
+	public String getReleaseYear() {
 		return releaseYear;
 	}
 
-	public void setReleaseYear(Date releaseYear) {
+	public void setReleaseYear(String releaseYear) {
 		this.releaseYear = releaseYear;
 	}
 
